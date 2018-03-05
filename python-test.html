@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Hello</title>
+		<script>
+			function show_text(id, text){
+				document.getElementById(id).innerHTML = text;
+			}
+			function show_color(id, color){
+				document.getElementById(id).style.color = color;
+			}
+		</script>
+		<style>
+			#ll {width: 200px; font-size:40px;}
+		</style>
+	</head>
+	<body>
+		<label id="ll">test</label>
+		<div>
+			<a href="javascript:void(0);" onclick='javascript:show_text("ll", "My First JavaScript");'>My First JavaScript</a><br>
+			<a href="javascript:void(0);" onclick='javascript:show_text("ll", "Hello python")'>Hello python</a><br>
+			<a href="javascript:void(0);" onclick='javascript:show_color("ll", "#f00")'>red</a><br>
+			<a href="javascript:void(0);" onclick='javascript:show_color("ll", "#0f0")'>green</a><br>
+		</div>
+	</body>
+</html>
